@@ -1,4 +1,4 @@
-# JAVA AOP
+# Java Aop
 ![License](https://img.shields.io/github/license/oTalDoHud/ProjetoDashBoardVendas)
 
 ## O que é AOP?
@@ -41,5 +41,21 @@ adicionar ou modificar comportamentos sem alterar o código
 existente, melhorando a escalabilidade do projeto.
 
 ## Retorno dos logs
+Logs organizados como explicado acima.
+
+![Modelo_relacional](https://github.com/oTalDoHud/java_aop/blob/master/assets/log.png)
+
+# Tecnologias utilizadas
+- Java
+- Spring Boot
+- Aspect
+
+
+## Autor
+Hudson Lucas Teles Vieira
+
+www.linkedin.com/in/otaldohud
+
+hudson.lucas.vieira@gmail.com
 
 

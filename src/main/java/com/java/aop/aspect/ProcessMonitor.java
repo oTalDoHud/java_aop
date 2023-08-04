@@ -44,7 +44,6 @@ public class ProcessMonitor {
             object.put("path", methodSignature.getDeclaringTypeName());
             object.put("class", methodSignature.getDeclaringType().getSimpleName());
             object.put("method", methodSignature.getMethod().getName());
-//            object.put("args", new ArrayList<>());
             var args = new ArrayList<>();
 
             if (method.getParameterCount() > 0) {

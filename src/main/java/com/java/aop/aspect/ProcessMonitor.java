@@ -40,10 +40,10 @@ public class ProcessMonitor {
             MethodSignature methodSignature = (MethodSignature) pjp.getSignature();
             Method method = methodSignature.getMethod();
 
-            var object = new LinkedHashMap<>();
-            object.put("path", methodSignature.getDeclaringTypeName());
-            object.put("class", methodSignature.getDeclaringType().getSimpleName());
-            object.put("method", methodSignature.getMethod().getName());
+            var classMethod = new LinkedHashMap<>();
+            classMethod.put("path", methodSignature.getDeclaringTypeName());
+            classMethod.put("class", methodSignature.getDeclaringType().getSimpleName());
+            classMethod.put("method", methodSignature.getMethod().getName());
             var args = new ArrayList<>();
 
             if (method.getParameterCount() > 0) {
@@ -56,7 +56,7 @@ public class ProcessMonitor {
             }
 
             LOG.info("Method execution time: " + totalTime + "ms");
-            LOG.info("Class and method: " + object);
+            LOG.info("Class and method: " + classMethod);
             LOG.info("Arguments: " + args);
         }
 
